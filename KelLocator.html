@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title lang="en">7th Citadel Kel Locator - Extraboard.net</title>
+  <link rel="stylesheet" type="text/css" href="7ci/locstyle.css">
+  <meta name="author" content="Stephane 'Saturn' Demots">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+<!-- Author: Stephane DEMOTS -->
+
+<!-- --------------------------------------------- --------------------------------------------- -->
+<!-- BODY -->
+<!-- --------------------------------------------- --------------------------------------------- -->
+<body onload="pageInit()" class="">
+
+<div class="">
+  <p class="clTitle">7th Citadel: Locator</p>
+  </br>
+
+  <div class="clToolbar">
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="flagp" src="7ci/flagp.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="flagb" src="7ci/flagb.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="star" src="7ci/star.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="death" src="7ci/death.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="numb1" src="7ci/numb1.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="numb2" src="7ci/numb2.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="numb3" src="7ci/numb3.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="rectr" src="7ci/rectr.png"></button>
+    <button class="clToolButton" onclick="fctSetTool(this)"><img id="rectb" src="7ci/rectb.png"></button>
+  </div>
+
+  <div id="idMap" class="clMap" style="height:300px; width: 800px" onclick="fctClickDraw(event)">
+    <canvas id="idCanvas" width="800px" height="300px"></canvas>
+    <!-- <img id="idIconTemplate" class="clIcon clDisplayNone" onclick="fctSelect(this)" ondragstart="fctSelect(this)" draggable="true"></img> -->
+    <object id="idRectTemplate" class="clRectDraw clDisplayNone" ></object>
+  </div>
+  </br>
+  <div class="clToolbar">
+    <label>Generated map code:</label>
+    <input type="text" value="" class="clCode" disabled id="idExportCode">
+    <button class="clToolButton" onclick="fctExport()">Full link to clipboard</button>
+    </br></br>
+    <button class="clToolButton" onclick="fctBack()">Delete lastest</button>
+    <button class="clToolButton" onclick="fctReset()">Delete all</button>
+  </div>
+</br>
+
+  <div class="">
+  </br></br></br></br>
+    <div class="clRightSide">
+      <p class="clEn">NON OFFICIAL PAGE</br>Made by Stéphane 'Saturn' Démots</br>September 2020</p>
+    </div>
+  </div>
+</div>
+
+<!-- Tracking -->
+<img id="t"style="height:1px;width:1px;" src="7thCitadelLocator.track" alt="&nbsp;"></img>
+
+<!-- --------------------------------------------- --------------------------------------------- -->
+<!-- SCRIPTS -->
+<!-- --------------------------------------------- --------------------------------------------- -->
+    <!-- Files -->
+    <script src="7ci/locator.js"></script>
+</body>
+</html>

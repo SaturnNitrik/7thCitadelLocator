@@ -1,0 +1,69 @@
+/* Author: Stephane Demots */
+
+
+html {
+    height: 100%;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  margin: 0;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  /* background-image: url("bg2.png"); */
+  font-family: verdana, Arial, sans-serif;
+  cursor: default;
+  font-family: sans-serif;
+  padding-top: 5px;}
+
+label { margin-right: 10px; }
+
+
+.clTitle{
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.clMap{
+  position:relative;
+  cursor: crosshair;
+  border:1px solid #000000;
+  /* height: 300px; */
+  /* width: 800px; */
+}
+
+
+.clToolButton{
+  padding: 2px;
+  margin: 0px;
+}
+
+.clIcon{
+  position: absolute;
+}
+
+.clRectDraw{
+  position: absolute;
+  border:2px solid red;
+}
+
+.clSelected{
+  border:2px solid grey;
+  border-style: dashed;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.clCode{
+  width: 500px;
+}
+
+.clRightSide{
+  text-align: right;
+}
+
+.clDisplayNone{display: none;}
